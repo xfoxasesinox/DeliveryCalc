@@ -79,6 +79,9 @@ public class calculator {
 	public static void perHour() {
 		double hourAmt = profit1 / hours;
 		System.out.println("you made " + hourAmt + " per hour today");
+		System.out.println("***************************");
+		System.out.println("***************************");
+		System.out.println("***************************");
 		systemClose();
 	}
 	public static void systemClose() {
