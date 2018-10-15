@@ -16,13 +16,13 @@ public class calculator {
 	static Scanner input = new Scanner(System.in);
 	static String answer2;
 	public static void main(String[]args) {
-		System.out.print("please enter 'work' if you would like to calculate amount owed to work, "
-				+ "please enter 'profit' if you would like to calculate profit: ");
+		System.out.print("please enter '1' if you would like to calculate amount owed to work, "
+				+ "please enter '2' if you would like to calculate profit: ");
 		answer = input.next();
-		if(answer.equals("work")) {
+		if(answer.equals("1")) {
 			input();
 		}
-		if(answer.equals("profit")) {
+		if(answer.equals("2")) {
 			profit();
 		}
 	}
@@ -72,9 +72,14 @@ public class calculator {
 		System.out.println("***************************");
 		System.out.println("***************************");
 		System.out.println("***************************");
+		perHour();
+		
+		
+	}
+	public static void perHour() {
+		double hourAmt = profit1 / hours;
+		System.out.println("you made " + hourAmt + " per hour today");
 		systemClose();
-		
-		
 	}
 	public static void systemClose() {
 		System.out.print("Type 1 if you would like to restart this program, type 0 if you want to close it: ");
@@ -86,6 +91,7 @@ public class calculator {
 			System.exit(0);
 		}
 		
+
 	}
 	}
 
